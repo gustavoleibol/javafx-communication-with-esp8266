@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutY="1.0" prefHeight="39.0" prefWidth="900.0" style="-fx-background-color: #d4d4d4;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <children>
+            <JFXButton opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#08ff0b">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#ddff00">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#Sair" opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#ff0707">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="11.92" radius="2.48" width="0.0" />
+         </effect>
+      </HBox>
+      <AnchorPane fx:id="register" layoutX="471.0" layoutY="56.0" opacity="0.91" prefHeight="530.0" prefWidth="415.0" style="-fx-background-color: yellow; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <JFXTextField fx:id="rLogin" focusColor="BLACK" labelFloat="true" layoutX="33.0" layoutY="199.0" prefHeight="51.0" prefWidth="345.0" promptText="Login" style="-fx-background-color: white;" unFocusColor="BLACK" AnchorPane.bottomAnchor="280.0">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="rPass" focusColor="BLACK" labelFloat="true" layoutX="33.0" layoutY="282.0" prefHeight="51.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="BLACK" AnchorPane.bottomAnchor="197.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="372.0" onMouseClicked="#Register" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #00c7c4; -fx-cursor: hand;" text="Confirm" AnchorPane.bottomAnchor="119.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="222.0" layoutY="372.0" onAction="#Cancel" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #d12711; -fx-cursor: hand;" text="Cancel" AnchorPane.bottomAnchor="119.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="155.0" layoutY="516.0" text="Gustavo Rocha Serafim" AnchorPane.bottomAnchor="1.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="140.0" layoutY="468.0" prefHeight="39.0" prefWidth="123.0" text="About ?" underline="true" AnchorPane.bottomAnchor="23.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="121.0" layoutY="84.0" text="Register" AnchorPane.bottomAnchor="401.0" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="84.0">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="40.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="51.0" fitWidth="39.0" layoutX="21.0" layoutY="14.0" onMouseClicked="#ShowSign" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../Image/voltar.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="15.07" radius="7.035" width="15.07" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane fx:id="sign" layoutX="22.0" layoutY="56.0" opacity="0.93" prefHeight="530.0" prefWidth="415.0" style="-fx-background-color: #00c7c4; -fx-background-radius: 15px;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="463.0" AnchorPane.topAnchor="56.0">
+         <children>
+            <JFXTextField fx:id="tfLogin" focusColor="BLACK" labelFloat="true" layoutX="33.0" layoutY="199.0" prefHeight="51.0" prefWidth="345.0" promptText="Login" style="-fx-background-color: white;" unFocusColor="BLACK" AnchorPane.bottomAnchor="280.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="199.0">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="tfPass" focusColor="BLACK" labelFloat="true" layoutX="33.0" layoutY="282.0" prefHeight="51.0" prefWidth="345.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="BLACK" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="37.0">
+               <font>
+                  <Font name="Bell MT" size="17.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton buttonType="RAISED" layoutX="57.0" layoutY="372.0" onAction="#Login" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #10c419; -fx-cursor: hand;" text="Confirm" AnchorPane.bottomAnchor="119.0" AnchorPane.rightAnchor="217.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="220.0" layoutY="372.0" onAction="#Cancel" prefHeight="39.0" prefWidth="141.0" style="-fx-background-color: #d12711; -fx-cursor: hand;" text="Cancel" AnchorPane.bottomAnchor="119.0" AnchorPane.rightAnchor="54.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="18.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="160.0" layoutY="510.0" text="Gustavo Rocha Serafim" AnchorPane.bottomAnchor="7.0">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="146.0" layoutY="452.0" onAction="#ShowRegister" prefHeight="39.0" prefWidth="123.0" style="-fx-background-color: yellow; -fx-cursor: hand;" text="Register" AnchorPane.bottomAnchor="39.0">
+               <ripplerFill>
+                  <LinearGradient endX="0.6238095238095238" endY="0.8761904761904762">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Light BT" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="121.0" layoutY="84.0" text="Sign up" AnchorPane.bottomAnchor="401.0" AnchorPane.leftAnchor="121.0" AnchorPane.rightAnchor="125.0">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="40.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="15.07" radius="7.7775" width="18.04" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

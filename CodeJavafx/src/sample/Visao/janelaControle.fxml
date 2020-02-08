@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="Principal" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controle.JanelaControle">
+   <children>
+      <HBox layoutY="1.0" prefHeight="39.0" prefWidth="900.0" style="-fx-background-color: #d4d4d4;">
+         <children>
+            <JFXButton opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#08ff0b">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#logout" opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#ddff00">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton onAction="#Sair" opacity="0.89" prefHeight="39.0" prefWidth="39.0" style="-fx-background-radius: 50%; -fx-background-color: #f7f7f7; -fx-border-radius: 50%; -fx-border-color: #c4c4c4;" text="•" textFill="#ff0707">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+         </children>
+         <effect>
+            <DropShadow blurType="ONE_PASS_BOX" height="11.92" radius="2.48" width="0.0" />
+         </effect>
+      </HBox>
+      <AnchorPane fx:id="control" layoutX="30.0" layoutY="56.0" opacity="0.93" prefHeight="530.0" prefWidth="401.0" style="-fx-background-color: #04075e; -fx-background-radius: 15px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="15.07" radius="7.7775" width="18.04" />
+         </effect>
+         <children>
+            <JFXButton layoutX="160.0" layoutY="302.0" onMousePressed="#avancar" onMouseReleased="#parar" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↑" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="68.0" layoutY="374.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="←" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="374.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="→" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="160.0" layoutY="446.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↓" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="160.0" layoutY="374.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="Ok" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="30.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="302.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↗" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="68.0" layoutY="302.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↖" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="252.0" layoutY="446.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↘" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="68.0" layoutY="446.0" prefHeight="70.0" prefWidth="92.0" style="-fx-border-color: #c1c1c1; -fx-border-radius: 50%; -fx-background-radius: 50%;" text="↙" textAlignment="CENTER" textFill="#3c9443">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="38.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="68.0" layoutY="173.0" prefHeight="27.0" prefWidth="92.0" text="Speed:" textFill="#3c9443">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="25.0" />
+               </font>
+            </Label>
+            <JFXSlider fx:id="slider" indicatorPosition="RIGHT" layoutX="66.0" layoutY="206.0" onMouseReleased="#getVelocidade" prefHeight="33.0" prefWidth="280.0" />
+            <JFXButton layoutX="252.0" layoutY="171.0" style="-fx-background-color: white;" text="Manual" textFill="#3c9443">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="68.0" layoutY="101.0" text="Status Connected: True" textFill="#3c9443">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="131.0" text="Process: 192.168.1.4:1234" textFill="#3c9443">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="2.0" layoutY="76.0" prefHeight="6.0" prefWidth="401.0" />
+            <Separator layoutX="2.0" layoutY="271.0" prefHeight="6.0" prefWidth="401.0" />
+            <Label layoutX="116.0" layoutY="14.0" text="Control" textFill="#3c9443">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="data" layoutX="468.0" layoutY="56.0" opacity="0.93" prefHeight="530.0" prefWidth="401.0" style="-fx-background-color: #ff8000; -fx-background-radius: 15px;">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" height="15.07" radius="7.7775" width="18.04" />
+         </effect>
+         <children>
+            <Label layoutX="153.0" layoutY="14.0" text="DATA" textFill="WHITE">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="40.0" />
+               </font>
+            </Label>
+            <MediaView fx:id="mv" fitHeight="200.0" fitWidth="300.0" layoutX="60.0" layoutY="89.0" />
+            <JFXToggleButton layoutX="1.0" layoutY="324.0" text="ON/OFF LIGHT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXToggleButton>
+            <JFXButton layoutX="271.0" layoutY="338.0" style="-fx-background-color: white;" text="Print video" textFill="#009688">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="14.0" layoutY="396.0" text="Temperature: 30°" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="442.0" text="Gás 1:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="481.0" text="Gás 2:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="271.0" prefHeight="6.0" prefWidth="401.0" />
+            <Label layoutX="320.0" layoutY="396.0" text="AcY:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="320.0" layoutY="442.0" text="AcX:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="320.0" layoutY="481.0" text="AcZ:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="396.0" text="AnY:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="442.0" text="AnX:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="191.0" layoutY="481.0" text="AnZ:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <Separator layoutX="1.0" layoutY="74.0" prefHeight="6.0" prefWidth="401.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
