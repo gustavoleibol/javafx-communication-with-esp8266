@@ -12,3 +12,5 @@ Code Javafx GUI is a client
 
 Only send caracter of client to server 
 
+*Code Comments in Portuguese*
+
